@@ -46,6 +46,14 @@
 #dtparam=i2c_arm=on
 #dtparam=i2s=on
 #dtparam=spi=on
+# Waveshare CAN ver.1
+#dtoverlay=mcp2515-can0,oscillator=8000000,interrupt=25,spimaxfrequency=1000000
+# Waveshare CAN ver.2
+#dtoverlay=mcp2515-can0,oscillator=12000000,interrupt=25,spimaxfrequency=2000000
+# PICAN2
+#dtoverlay=mcp2515-can0,oscillator=16000000,interrupt=25
+#dtoverlay=spi-bcm2835-overlay
+
 
 # Uncomment this to enable infrared communication.
 #dtoverlay=gpio-ir,gpio_pin=17
